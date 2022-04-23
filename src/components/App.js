@@ -1,13 +1,17 @@
 import React from "react";
 import blogData from "../data/blog";
+import About from "/Users/andrewsm1/Development/code/phase-2/react-hooks-component-props-mini-project/src/components/About.js"
+import ArticleList from "/Users/andrewsm1/Development/code/phase-2/react-hooks-component-props-mini-project/src/components/ArticleList.js"
+import Header from "/Users/andrewsm1/Development/code/phase-2/react-hooks-component-props-mini-project/src/components/Header.js"
 
 console.log(blogData);
 
 function App() {
   return (
     <div className="App">
-      You're on your own from here! Follow the deliverables; test things out in
-      the browser as you write your code; and good luck!
+      <Header name={blogData.name} />
+      <About image = {blogData.image} about={blogData.about} />
+      <ArticleList />
     </div>
   );
 }
